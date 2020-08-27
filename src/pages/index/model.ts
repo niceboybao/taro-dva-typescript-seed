@@ -12,7 +12,7 @@ export default {
   effects: {
     *[SETLOAN]({ payload }, { call, put, select }) {
       try {
-        const operator = payload;
+        const operator = payload111;
         const loan = yield select((model: Model) => model.home.loan);
         switch (operator) {
           case '+':
