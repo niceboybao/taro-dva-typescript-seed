@@ -74,7 +74,6 @@
     "@types/webpack-env": "^1.13.6",
     "@typescript-eslint/eslint-plugin": "^3.6.1",
     "@typescript-eslint/parser": "^3.6.1",
-    "@zycfc/deploy-test": "^1.3.1",
     "babel-eslint": "^8.2.3",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
