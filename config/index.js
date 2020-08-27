@@ -34,7 +34,7 @@ const ASSETS_HOST = {
   },
 };
 
-const ProjectName = 'taro-dva-typescript-seed';
+const ProjectName = 'sentry_h5';
 
 const config = {
   projectName: ProjectName,
