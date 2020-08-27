@@ -9,7 +9,7 @@ const init = () => {
   Sentry.init({
     dsn: SENTRY_DNS,
     environment: __SERVER_ENV__, //  "sit" | "prod"
-    release: `${__SERVER_ENV__}@${__VERSION__}`,
+    release: `${__VERSION__}`,
   });
 
   Sentry.configureScope((scope) => {
