@@ -155,7 +155,7 @@ const config = {
         // }),
       });
 
-      if (!noAnalyzer) {
+      if (noAnalyzer) {
         chain
           .plugin('analyzer')
           .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin, [])
