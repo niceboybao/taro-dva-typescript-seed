@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es2015", // 指定编译之后的版本目录
+    "module": "commonjs", // 使用的模板标准
+    "removeComments": false, // 是否将编译后的文件注释删掉
+    "preserveConstEnums": true,
+    "moduleResolution": "node", // 选择模块解析策略
+    "experimentalDecorators": true,
+    "noImplicitAny": false, // 存在隐式 any 时抛错
+    "allowSyntheticDefaultImports": true, // 用来指定允许从没有默认导出的模块中默认导入
+    "outDir": "lib", // 编译生成的文件存放路径
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true, // null和undefined值不能赋值给非这两种类型的值
+    "sourceMap": true, // 生成 .map 文件
+    "baseUrl": ".", // 设置解析非相对模块名称的基本目录
+    "rootDir": ".", // 编译文件的根目录
+    "jsx": "preserve", // 在 .tsx 中支持 JSX
+    "jsxFactory": "Taro.createElement", // jsx 设置为 Taro 时使用的创建函数
+    "allowJs": true, // 允许编译 JS 文件
+    "resolveJsonModule": true,
+    "typeRoots": ["node_modules/@types"], // 用来指定默认的类型声明文件查找路径
+    "paths": { // 设置模块名到基于baseUrl的路径映射
+      "@/*": ["./src/*"],
+    }
+  },
+  "exclude": ["node_modules", "dist"], // 排除的，不编译的文件
+  "compileOnSave": false // 保存时 编辑器会根据tsconfig.json的配置更新重新生成文本
+}

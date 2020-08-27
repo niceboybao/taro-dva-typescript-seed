@@ -1,0 +1,15 @@
+.my-button {
+  width: 100%;
+  border-radius: 8px;
+  background: linear-gradient(to right, #4d8fff, #0056ff);
+  color: #fff;
+  border: 0;
+  margin: 20px 0;
+  &.disabled:not([type]) {
+    background: linear-gradient(to right, #cadeff, #b2ccff);
+    color: #fff;
+  }
+  &::after {
+    border: 0;
+  }
+}
